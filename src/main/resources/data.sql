@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS users (
 
 -- Chèn dữ liệu vào bảng users
 INSERT INTO users (email, password, full_name, address, phone_number, avatar, role_id) VALUES
-('ninh2k4@gmail.com', '$2a$10$.o9Dbz5ldf2GOX8abi/e/OQC0TPVceDq2qajtl2iQUGeMD1jFcVRK', 'Quản trị viên', '123 Đường Admin, TP.HCM', '0123456789', '/uploads/images/avatar/1739691800734-Screenshot 2025-02-16 102449.png', 1),
+('ninh2k4@gmail.com', '$2a$10$.o9Dbz5ldf2GOX8abi/e/OQC0TPVceDq2qajtl2iQUGeMD1jFcVRK', 'Hoài Ninh', '123 Đường Admin, TP.HCM', '0123456789', '/uploads/images/avatar/1739691800734-Screenshot 2025-02-16 102449.png', 1),
 ('guest@gmail.com', '$2a$10$.o9Dbz5ldf2GOX8abi/e/OQC0TPVceDq2qajtl2iQUGeMD1jFcVRK', 'Người dùng', '456 Đường User, Hà Nội', '0987654321', '/uploads/images/avatar/174005473758-Screenshot 2024-05-27 154415.png', 2)
 ON CONFLICT DO NOTHING;
 
@@ -46,16 +46,16 @@ CREATE TABLE IF NOT EXISTS products (
 
 -- Chèn 10 bản ghi vào bảng products
 INSERT INTO products (name, price, image, detail_desc, short_desc, quantity, sold, factory, target) VALUES
-('Lenovo ThinkPad 11', 45990000, '/uploads/images/product/1740193180086-lenovo_x1_carbon.jpg', 'Laptop doanh nhân, Intel Core i7, RAM 16GB, SSD 1TB, bàn phím chống nước', 'Laptop bền bỉ cho doanh nghiệp', 45, 12, 'Lenovo', 'Doanh nhân'),
-('DELL XPS 15', 51990000, '/uploads/images/product/174019496408-dell_xps_15.jpg', 'Màn hình 15.6 inch OLED, Intel Core i7, RAM 16GB, card RTX 3050', 'Laptop cao cấp cho thiết kế', 25, 8, 'Dell', 'Thiết kế đồ họa'),
-('ASUS ROG Strix G16', 42990000, '/uploads/images/product/174019508239-asus_rog_strix_g16.jpg', 'Laptop gaming, AMD Ryzen 9, RTX 4070, màn 165Hz', 'Laptop gaming mạnh mẽ', 30, 15, 'Asus', 'Gaming'),
-('Acer Nitro 5 AN515', 29990000, '/uploads/images/product/174019574883-acer_nitro_5.jpg', 'Laptop gaming, Intel Core i5, RTX 3060, RAM 16GB', 'Laptop gaming giá tốt', 40, 20, 'Acer', 'Gaming'),
-('ASUS VivoBook 15', 13990000, '/uploads/images/product/1740195847675-asus_vivobook_15.jpg', 'Laptop phổ thông, AMD Ryzen 5, RAM 8GB, SSD 512GB', 'Laptop giá rẻ, đa năng', 80, 25, 'Asus', 'Sinh viên - Văn phòng'),
-('LG Gram 17', 41990000, '/uploads/images/product/1740196603432-lg_gram_17.jpg', 'Laptop siêu nhẹ, Intel Core i5, RAM 16GB, màn 17 inch', 'Laptop nhẹ nhất cho di động', 35, 10, 'LG', 'Mỏng nhẹ'),
-('LG Gram 14', 19990000, '/uploads/images/product/1740197007634-lg_gram_14.jpg', 'Laptop siêu nhẹ, Intel Core i7, RAM 8GB, màn 14 inch', 'Laptop mỏng nhẹ, hiệu năng cao', 50, 15, 'LG', 'Mỏng nhẹ'),
-('DELL Inspiron 15', 15990000, '/uploads/images/product/1740209914533-dell_inspiron_15.jpg', 'Laptop phổ thông, Intel Core i5, RAM 8GB, SSD 256GB', 'Laptop giá rẻ, học tập', 90, 30, 'Dell', 'Sinh viên - Văn phòng'),
-('MacBook Pro M2', 69990000, '/uploads/images/product/1740210184225-macbook_pro_m2.jpg', 'Chip M2 Max, RAM 32GB, SSD 1TB, Retina Display', 'Laptop chuyên nghiệp cho thiết kế', 20, 5, 'Apple (Macbook)', 'Thiết kế đồ họa'),
-('Acer Aspire 5', 12990000, '/uploads/images/product/1740211005350-acer_aspire_5.jpg', 'Laptop phổ thông, AMD Ryzen 3, RAM 8GB, SSD 512GB', 'Laptop giá rẻ, học tập', 100, 40, 'Acer', 'Sinh viên - Văn phòng')
+('Lenovo ThinkPad 11', 45990000, '/uploads/images/product/1740193180086-lenovo_x1_carbon.jpg', 'Laptop doanh nhân, Intel Core i7, RAM 16GB, SSD 1TB, bàn phím chống nước', 'Intel Core i7-1365U', 45, 12, 'LENOVO', 'DOANH-NHAN'),
+('DELL XPS 15', 51990000, '/uploads/images/product/174019496408-dell_xps_15.jpg', 'Màn hình 15.6 inch OLED, Intel Core i7, RAM 16GB, card RTX 3050', 'Intel Core i9-13900H', 25, 8, 'DELL', 'THIET-KE-DO-HOA'),
+('ASUS ROG Strix G16', 42990000, '/uploads/images/product/174019508239-asus_rog_strix_g16.jpg', 'Laptop gaming, AMD Ryzen 9, RTX 4070, màn 165Hz', 'Intel Core i7-13650HX', 30, 15, 'ASUS', 'GAMING'),
+('Acer Nitro 5 AN515', 29990000, '/uploads/images/product/174019574883-acer_nitro_5.jpg', 'Laptop gaming, Intel Core i5, RTX 3060, RAM 16GB', 'Intel Core i5-12500H', 40, 20, 'ACER', 'GAMING'),
+('ASUS VivoBook 15', 13990000, '/uploads/images/product/1740195847675-asus_vivobook_15.jpg', 'Laptop phổ thông, AMD Ryzen 5, RAM 8GB, SSD 512GB', 'Intel Core i3-1215U', 80, 25, 'ASUS', 'SINHVIEN-VANPHONG'),
+('LG Gram 17', 41990000, '/uploads/images/product/1740196603432-lg_gram_17.jpg', 'Laptop siêu nhẹ, Intel Core i5, RAM 16GB, màn 17 inch', 'Intel Core i7-1360P', 35, 10, 'LG', 'MONG-NHE'),
+('LG Gram 14', 19990000, '/uploads/images/product/1740197007634-lg_gram_14.jpg', 'Laptop siêu nhẹ, Intel Core i7, RAM 8GB, màn 14 inch', 'Intel Core i5-1240P', 50, 15, 'LG', 'SINHVIEN-VANPHONG'),
+('DELL Inspiron 15', 15990000, '/uploads/images/product/1740209914533-dell_inspiron_15.jpg', 'Laptop phổ thông, Intel Core i5, RAM 8GB, SSD 256GB', 'AMD Ryzen 5 5500U', 90, 30, 'DELL', 'SINHVIEN-VANPHONG'),
+('MacBook Pro M2', 69990000, '/uploads/images/product/1740210184225-macbook_pro_m2.jpg', 'Chip M2 Max, RAM 32GB, SSD 1TB, Retina Display', 'Apple M2 Pro', 20, 5, 'APPLE', 'THIET-KE-DO-HOA'),
+('Acer Aspire 5', 12990000, '/uploads/images/product/1740211005350-acer_aspire_5.jpg', 'Laptop phổ thông, AMD Ryzen 3, RAM 8GB, SSD 512GB', 'Intel Core i5-1235U', 100, 40, 'ACER', 'SINHVIEN-VANPHONG')
 ON CONFLICT DO NOTHING;
 
 -- Tạo bảng orders
